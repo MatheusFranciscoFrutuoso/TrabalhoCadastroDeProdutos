@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Console.Models;
 
 namespace Console
 
@@ -10,8 +11,6 @@ namespace Console
 {
     class Program
     {
-        List<Categoria> categoria = new List<Categoria>();
-        List<Produto> produto = new List<Produto>();
 
         static void Main(string[] args)
         {
@@ -56,16 +55,16 @@ namespace Console
                 switch (opcao)
                 {
                     case 1:
-                        produto.Add(cadastro.CadastroProduto());
+                        cadastro.CadastroProduto();
                         break;
                     case 2:
-                        categoria.Add(cadastro.CadastroCategoria());
+                        cadastro.CadastroCategoria();
                         break;
                     case 3:
-                        cadastro.ListagemP(produto);
+                        cadastro.ListagemP();
                         break;
                     case 4:
-                        cadastro.ListagemC(categoria);
+                        cadastro.ListagemC();
                         break;
                     case 0:
                         System.Console.WriteLine("Saindo... Tecle ENTER para sair");
