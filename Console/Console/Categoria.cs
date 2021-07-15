@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console
 {
-    class Categoria
+    struct Categoria
     {
         public int Id { get; set; }
         public string Nome { get; set; }
